@@ -10,9 +10,9 @@
     <nav>
         <img src="./logo.png" id="logo">
         <ul id="nav-links">
-            <li><a href="#">WHO I AM</a></li>
-            <li><a href="#">MY PROJECTS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#about">WHO I AM</a></li>
+            <li><a href="#projects">MY PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
         <div id="social">
             <img src="./Facebook.png">
@@ -20,5 +20,44 @@
             <img src="Twitter.png">
         </div>
     </nav>
+    <section id="about">
+        <div id="about-title"><h1>ABOUT ME</h1></div>
+        <img src="./underline.png" id="underline">
+        <div id="about-p">
+            <p>My name is Matthew Johnson and I am a full-stack developer from Minford, Ohio.</p>
+        </div>
+        <img src="./arrow.png" id="arrow">
+        <img src="./Headshot.png" id="headshot">
+        <hr/>
+    </section>
+    <section id="projects">
+        <h2>MY PROJECTS</h2>
+        <img src="./underline.png" id="underline2">
+        <img src="./Grinch.jpeg" id="grinch">
+        <h3>Project 1</h3>
+        <h3>Project 2</h3>
+        <h3>Project 3</h3>
+        <h3>Project 4</h3>
+        <h3>Project 5</h3>
+        <h3>Project 6</h3>
+        <hr>
+    </section>
+    <section id="contact">
+        <h2>GET IN TOUCH</h2>
+        <form action="POST">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+            <label for="email">EMAIL</label>
+            <input type="text" id="email" name="email">
+            <br><br>
+            <label for="message">MESSAGE</label>
+            <textarea id="message"></textarea>
+            <br><br>
+            <input type="submit" value="Send Message" id='submit'>
+        </form>
+    </section>
+
+    <script src="./app.js"></script>
 </body>
 </html>

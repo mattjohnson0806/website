@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +17,9 @@ nav {
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     justify-items: center;
+    width: 100%;
+    position: fixed; 
+    z-index: 5;
 }
 
 #nav-links {
@@ -30,5 +37,133 @@ nav a {
 }
 
 #social img {
-    width: 50px;
+    width: 30px;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-top: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#about-title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 35px;
+    font-family: fantasy, 'Arial Narrow', Arial, sans-serif;
+    rotate: 3deg;
+    text-align:center;
+}
+
+#underline {
+    width: 300px;
+    rotate: 5deg;
+    margin-top: -80px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#headshot {
+    width: 300px;
+    border-radius: 30%;
+    border: 6px solid black;
+    grid-column-start: 2;
+    rotate: -3deg;
+}
+
+#arrow {
+    position: absolute;
+    width: 450px;
+    rotate: 15deg;
+    top: 250px;
+}
+
+#about-p {
+    font-size: 25px;
+    margin-left: 80px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+hr {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: 100px;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 200px;
+    align-items: center;
+    justify-items: center;
+    padding-top: 300px;
+}
+
+#projects h2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-family: fantasy, 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    rotate: -10deg;
+    margin-left: 25px;
+}
+
+#underline2 {
+    width: 340px;
+    rotate: 5deg;
+    margin-top: -70px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-left: 60px;
+    rotate: -10deg;
+}
+
+#grinch {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    rotate: 3deg;
+    border-radius: 30%;
+    width: 300px;
+    border: 6px solid black;
+    margin-right: 600px;
+    margin-bottom: 70px;
+}
+
+#contact {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#contact h2 {
+    font-family: fantasy, 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+form {
+    border: 3px solid black;
+    border-radius: 20%;
+    padding: 80px;
+}
+
+#submit {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+input {
+    margin-left: 35px;
+}
+
+textarea {
+    margin-left: 10px;
 }
